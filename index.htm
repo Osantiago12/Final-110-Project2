@@ -10,19 +10,12 @@
 
 <body>
     <header>
-        Eye Exam Sign Up/Sign In 
+        Eye Exam Sign Up/Sign In
     </header>
 
-    <video autoplay muted loop id="bgVideo" src="Videos/White letters on black screen background full HD.... - Gopal Creation (720p).mp4"></video> 
-    
-
-
-
-    Notes to myself:
-        Add a video where it covers a screen long enough so it can switch between sign up and sign in.
-        actually get both sign's to switch properly.
-        work on the welcome page last. Time constraints.
-    
+    <video autoplay muted loop id="bgVideo"
+        src="Videos/White letters on black screen background full HD.... - Gopal Creation (720p).mp4">
+    </video>
 
 
     <div class="signUp">
@@ -31,14 +24,25 @@
         <br><input type="text" id="password" placeholder="Password">
         <p id="error"></p>
         <br><button id="signUp" onclick="SignUp()">Sign Up</button>
+        <p id="success"></p>
+        <div class="signInSwitch">
+            <p>Already have an account?</p>
+            <button id="switch" onclick="switchIn()">Sign In</button>
+        </div>
     </div>
 
+
     <div class="signIn">
-        <h1>Sign in</h1>
+        <h1>Sign In</h1>
         <input type="text" id="usernameIn" placeholder="Username">
         <br><input type="text" id="passwordIn" placeholder="Password">
         <p id="errorIn"></p>
         <br><button id="signUp" onclick="SignIn()">Sign In</button>
+        <br>
+        <div class="signUpSwitch">
+            <p>Don't have an account?</p>
+            <button id="switch" onclick="switchUp()">Sign Up Today</button>
+        </div>
     </div>
 
 
