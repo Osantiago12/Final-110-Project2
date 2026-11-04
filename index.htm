@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up/in Page</title>
+</head>
+
+<body>
+    <header>
+        Eye Exam Sign Up/Sign In 
+    </header>
+
+    <video autoplay muted loop id="bgVideo" src="Videos/White letters on black screen background full HD.... - Gopal Creation (720p).mp4"></video> 
+    
+
+
+
+    Notes to myself:
+        Add a video where it covers a screen long enough so it can switch between sign up and sign in.
+        actually get both sign's to switch properly.
+        work on the welcome page last. Time constraints.
+    
+
+
+    <div class="signUp">
+        <h1>Sign Up</h1>
+        <input type="text" id="username" placeholder="Username">
+        <br><input type="text" id="password" placeholder="Password">
+        <p id="error"></p>
+        <br><button id="signUp" onclick="SignUp()">Sign Up</button>
+    </div>
+
+    <div class="signIn">
+        <h1>Sign in</h1>
+        <input type="text" id="usernameIn" placeholder="Username">
+        <br><input type="text" id="passwordIn" placeholder="Password">
+        <p id="errorIn"></p>
+        <br><button id="signUp" onclick="SignIn()">Sign In</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
